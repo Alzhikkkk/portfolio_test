@@ -1,0 +1,84 @@
+.note{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.notes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.notes-item{
+    width: 25%;
+    height: 500px;
+    display: flex;
+    position: relative;
+}
+
+.notes-paper{
+    background-image: url('../../img/back_notes.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.notes-laptop{
+    background-image: url('../../img/back_laptop.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.notes-microsoft{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.notes-microsoft img{
+    width: 23%;
+}
+
+.notes-item::before{
+    content: " ";
+    background-image: url('../../img/view.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+}
+
+.notes-item:hover::before{
+    display: flex;
+    transition: .4s;
+}
+
+@media (max-width: 855px) {
+    .notes-item{
+        height: 250px;
+    }
+    .notes-item:hover::before{
+        background-size: 50%;
+    }
+}
+
+@media (max-width: 577px) {
+    .notes-item{
+        height: 125px;
+    }
+
+    .notes-item:hover::before{
+        background-size: 50%;
+    }
+}

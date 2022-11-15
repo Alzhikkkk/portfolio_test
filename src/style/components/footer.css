@@ -1,0 +1,27 @@
+.footer{
+    background-color: #34547A;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+}
+
+.footer-social{
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 577px) {
+    .footer{
+        flex-direction: column;
+        gap: 25px;
+        align-items: flex-start;
+    }
+}

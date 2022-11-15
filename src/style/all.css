@@ -1,0 +1,15 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Revalia&family=Roboto&display=swap');
+
+/* style for reseting browser's style*/
+@import url('./vendor/reset.css');
+
+
+@import url('./components/header.css');
+@import url('./components/about.css');
+@import url('./components/project.css');
+@import url('./components/skill.css');
+@import url('./components/work.css');
+@import url('./components/note.css');
+@import url('./components/contact.css');
+@import url('./components/footer.css');

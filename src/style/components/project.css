@@ -1,0 +1,40 @@
+.project{
+    width: 100%;
+    background-color: #34547A;
+    display: flex;
+    justify-content: center;
+    padding: 2% 0;
+    box-sizing: border-box;
+}
+
+.project-items{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-items span{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.project-items span p{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 577px) {
+    .project-items span{
+        flex-direction: column;
+    }
+
+    .project-items span p{
+        text-align: center;
+    }
+}
