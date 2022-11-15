@@ -68,3 +68,9 @@
         padding-bottom: 10%;
     }
 }
+
+@media (max-width: 577px) {
+    .skill-items{
+        width: 50%;
+    }
+}
